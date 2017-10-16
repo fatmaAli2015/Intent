@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string-array name="colors">
+        <item>red</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>green</item>
+        <item>blue</item>
+    </string-array>
+</resources>

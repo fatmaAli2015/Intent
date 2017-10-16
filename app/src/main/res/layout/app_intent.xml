@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatmaali.Application2.Image_Inside_Text">
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_intent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Intent"
+                android:textColor="#a4222b"
+                android:textSize="35dp" />
+
+            <Button
+                android:id="@+id/btn_web_url"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_intent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@android:drawable/ic_popup_sync"
+                android:onClick="btn_webURL"
+                android:text="Web Url" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtxt_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:hint="Number" />
+                <Button
+                    android:id="@+id/btn_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_alignLeft="@+id/btn_googleMap"
+                    android:layout_alignStart="@+id/btn_googleMap"
+                    android:layout_below="@+id/btn_googleMap"
+                    android:layout_marginTop="6dp"
+                    android:drawableLeft="@android:drawable/ic_menu_call"
+                    android:onClick="btn_telephone"
+                    android:text="Telephone" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_googleMap"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_web_url"
+                android:layout_alignStart="@+id/btn_web_url"
+                android:layout_below="@+id/btn_web_url"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@android:drawable/ic_dialog_map"
+                android:onClick="btn_googleMap"
+                android:text="Google Map" />
+
+
+
+            <Button
+                android:id="@+id/btn_ShImage"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_tel"
+                android:layout_alignStart="@+id/btn_tel"
+                android:layout_below="@+id/btn_tel"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@android:drawable/ic_menu_report_image"
+                android:onClick="btn_ShImage"
+                android:text="Share Image" />
+
+            <Button
+                android:id="@+id/btn_shM_Image"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_ShImage"
+                android:layout_alignStart="@+id/btn_ShImage"
+                android:layout_below="@+id/btn_ShImage"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@android:drawable/ic_menu_report_image"
+                android:onClick="btn_shM_Image"
+                android:text="Share Multi Image" />
+
+            <Button
+                android:id="@+id/btn_email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_shM_Image"
+                android:layout_alignStart="@+id/btn_shM_Image"
+                android:layout_below="@+id/btn_shM_Image"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:onClick="btn_email"
+                android:text="Email" />
+
+            <Button
+                android:id="@+id/btn_shText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_email"
+                android:layout_alignStart="@+id/btn_email"
+                android:layout_below="@+id/btn_email"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@android:drawable/ic_menu_upload_you_tube"
+                android:onClick="btn_shText"
+                android:text="Share Text" />
+
+            <Button
+                android:id="@+id/btn_alarm"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_shText"
+                android:layout_alignStart="@+id/btn_shText"
+                android:layout_below="@+id/btn_shText"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@android:drawable/ic_menu_recent_history"
+                android:onClick="btn_alarm"
+                android:text="Alarm" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

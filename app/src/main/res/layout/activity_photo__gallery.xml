@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.fatmaali.Application2.Photo_Gallery"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageViewShareImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_access_alarms_black_24dp" />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+        android:onClick="btn_gallery"
+        android:text="Gallery" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_report_image"
+        android:onClick="btn_ph_Image"
+        android:text="Share Image" />
+</LinearLayout>

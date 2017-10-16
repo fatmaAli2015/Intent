@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.fatmaali.Application2.AnimtApp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_fade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hello  Welcome"
+                android:layout_margin="20dp"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_fade_in"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:onClick="btn_fade_in"
+                android:layout_marginTop="6dp"
+                android:text="Fade_In" />
+
+            <Button
+                android:id="@+id/Btn_fade_out"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:onClick="btn_fade_out"
+                android:layout_marginTop="6dp"
+                android:text="Fade_Out"
+                 />
+
+            <Button
+                android:id="@+id/btn_zoom_in"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:text="zoom_in"
+                android:layout_marginTop="6dp"
+                android:onClick="btn_zoom_in"
+                />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:onClick="btn_zoom_out"
+                android:layout_marginTop="6dp"
+                android:text="zoom_out"
+                />
+
+            <Button
+                android:id="@+id/btn_tran"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:onClick="btn_trans"
+                android:layout_marginTop="6dp"
+                android:text="translate" />
+
+            <Button
+                android:id="@+id/btn_rotate"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:onClick="btn_Rotate"
+                android:layout_marginTop="6dp"
+                android:text="Rotate" />
+            <Button
+                android:id="@+id/btn_bounce"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:onClick="btn_bounce"
+                android:layout_marginTop="6dp"
+                android:text="Bounce" />
+            <Button
+                android:id="@+id/btn_together"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:onClick="btn_together"
+                android:layout_marginTop="6dp"
+                android:text="together" />
+          </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

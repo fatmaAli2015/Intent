@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fatmaali.Application2">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:name=".GlobalV"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".listActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Photo_Gallery" />
+        <activity
+            android:name=".Multi_photo"
+            android:theme="@style/FullScreen" />
+        <activity android:name=".Image_Inside_Text" />
+        <activity android:name=".Zoom" />
+        <activity android:name=".AppIntent" />
+        <activity android:name=".AnimtApp" />
+        <activity android:name=".Test1GlobelV" />
+        <activity android:name=".Test2GlobelV" />
+        <activity android:name=".Question"></activity>
+    </application>
+
+</manifest>
